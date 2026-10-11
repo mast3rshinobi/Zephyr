@@ -1,0 +1,63 @@
+cmake:
+  application:
+    configuration-dir: 'D:/zephyr_workspace/01_App_Button'
+    source-dir: 'D:/zephyr_workspace/01_App_Button'
+  board:
+    name: 'nucleo_f401re'
+    path:
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/boards/st/nucleo_f401re'
+    qualifiers: 'stm32f401xe'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'D:/zephyr_workspace/modules/button/dts/bindings'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/bindings'
+    files:
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/boards/st/nucleo_f401re/nucleo_f401re.dts'
+     - 'D:/zephyr_workspace/01_App_Button/app.overlay'
+    include-dirs:
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/ambiq/dts'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/atmel/include'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/bouffalolab/include'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/gigadevice/include'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/microchip/include'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/microchip/dts'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/nuvoton/dts'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/nxp/dts'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/stm32/dts'
+     - 'D:/zephyr_workspace/zephyrproject/modules/hal/ti/dts'
+     - 'D:/zephyr_workspace/modules/button/dts'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/include'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/include/zephyr'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/common'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/vendor'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/rx'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/x86'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/xtensa'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/sparc'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/riscv'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/posix'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/arm64'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/arm'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts/arc'
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/dts'
+    user-files:
+     - 'D:/zephyr_workspace/01_App_Button/app.overlay'
+  kconfig:
+    files:
+     - 'D:/zephyr_workspace/zephyrproject/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig'
+     - 'D:/zephyr_workspace/01_App_Button/prj.conf'
+    user-files:
+     - 'D:/zephyr_workspace/01_App_Button/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'D:/zephyr_workspace/zephyrproject/zephyr-sdk-0.17.2'
+  zephyr:
+    version: '4.2.00-rc1'
+    zephyr-base: 'D:/zephyr_workspace/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: 'D:\zephyr_workspace\.venv\Scripts\west build -b nucleo_f401re . -p always'
+  topdir: 'D:\zephyr_workspace\zephyrproject'
+  version: '1.5.0'

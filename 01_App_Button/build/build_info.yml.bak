@@ -1,0 +1,4 @@
+west:
+  command: D:\zephyr_workspace\.venv\Scripts\west build -b nucleo_f401re . -p always
+  topdir: D:\zephyr_workspace\zephyrproject
+  version: 1.5.0

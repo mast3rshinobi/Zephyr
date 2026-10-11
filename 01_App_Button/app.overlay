@@ -1,0 +1,19 @@
+/ {
+	aliases {
+		my-button-1 = &btn_1;
+	};
+
+	btn_1: btn_1 {
+		compatible = "custom,button";
+		pin = <&button_1>;
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+
+		button_1: button_1 {
+			gpios = <&gpioc 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+			label = "User button B1";
+		};
+	};
+};
